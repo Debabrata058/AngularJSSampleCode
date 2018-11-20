@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Service</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="javascript/module.js"></script>
+    <script src="javascript/provider.js"></script>
+    <script src="javascript/controller.js"></script>
+    <script src="javascript/services.js"></script>
+    <script src="javascript/factory.js"></script>
+    
+    
+</head>
+<body ng-app="custom_service_module">
+    <div ng-controller='custom_service_controller_one'>
+        <form action="">
+            <table>
+               <tr>
+                   <td><b>Custom Service Example (Using Service)</b></td>
+               </tr>
+                <tr>
+                    <td>
+                        <input type="number" ng-model="a" value="0">
+                    </td>
+                    <td>
+                        <input type="number" ng-model="b" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Add" ng-click="add()">
+                        <input type="button" value="Sub" ng-click="sub()">
+                        <input type="button" value="Div" ng-click="div()">
+                        <input type="button" value="Mul" ng-click="mul()">
+                        <input type="button" value="Rem" ng-click="rem()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Result : </label><b>{{result}}</b>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div ng-controller='custom_service_controller_two'>
+        <form action="">
+            <table>
+               <tr>
+                   <td><b>Custom Service Example (Using Factory)</b></td>
+               </tr>
+                <tr>
+                    <td>
+                        <input type="number" ng-model="a" value="0">
+                    </td>
+                    <td>
+                        <input type="number" ng-model="b" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Add" ng-click="add()">
+                        <input type="button" value="Sub" ng-click="sub()">
+                        <input type="button" value="Div" ng-click="div()">
+                        <input type="button" value="Mul" ng-click="mul()">
+                        <input type="button" value="Rem" ng-click="rem()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Result : </label><b>{{result}}</b>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div ng-controller='custom_service_controller_three'>
+        <form action="">
+            <table>
+               <tr>
+                   <td><b>Custom Service Example (Using Provider)</b></td>
+               </tr>
+                <tr>
+                    <td>
+                        <input type="number" ng-model="a" value="0">
+                    </td>
+                    <td>
+                        <input type="number" ng-model="b" value="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Add" ng-click="add()">
+                        <input type="button" value="Sub" ng-click="sub()">
+                        <input type="button" value="Div" ng-click="div()">
+                        <input type="button" value="Mul" ng-click="mul()">
+                        <input type="button" value="Rem" ng-click="rem()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Result : </label><b>{{result}}</b>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
